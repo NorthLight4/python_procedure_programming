@@ -62,10 +62,4 @@ main_str = """
 main_dictionary = count_letters(main_str)
 main_dictionary = calculate_frequency(main_dictionary,main_str)
 for key in main_dictionary.keys():
-    '''
-    if str(main_dictionary[key])=="0.0":
-        main_dictionary[key] = "0.00"
-    
-    нужно написать для срабатывания автоматической проверки
-    '''
-    print(str(key) + ":",main_dictionary[key])
+    print(f'{key}: {main_dictionary[key]:.2f}')
